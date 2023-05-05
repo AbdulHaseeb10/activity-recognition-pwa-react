@@ -147,9 +147,7 @@ const ActivityClassifier = () => {
 
   return (
     <div>
-      <p>X: {acceleration.x}</p>
-      <p>Y: {acceleration.y}</p>
-      <p>Z: {acceleration.z}</p>
+      <h1>Human Activity Recognition</h1>
       {console.log("outputValues", outputValues)}
       {outputValues &&
         outputValues.map((item) => {
@@ -160,7 +158,7 @@ const ActivityClassifier = () => {
                   activities[i] !== "Upstairs" &&
                   activities[i] !== "Downstairs" && (
                     <div key={i}>
-                      {activities[i]}:{value}
+                      {activities[i]}:{value.toFixed(2)*100}%
                     </div>
                   )
                 );
