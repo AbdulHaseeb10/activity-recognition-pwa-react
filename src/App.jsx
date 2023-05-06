@@ -1,10 +1,12 @@
 import './App.css'
-import ActivityClassifier from './ActivityClassifier';
+// import ActivityClassifier from './ActivityClassifier';
+import FileDownload from './FileDownload';
 export default function App() {
   return (
     <main>
-      <ActivityClassifier />
+      {/* <ActivityClassifier /> */}
       Hello
+      <FileDownload/>
     </main>
   )
 }
